@@ -1,5 +1,0 @@
-{
-  "tasks": {
-    "launch": "npm run dev"
-  }
-}

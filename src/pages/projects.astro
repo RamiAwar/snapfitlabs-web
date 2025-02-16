@@ -13,10 +13,36 @@ const projects = [
   <h1 class="text-4xl font-bold mb-8">Projects</h1>
   <ul class="space-y-4">
     {projects.map((project) => (
-      <li>
+      <li class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform hover:-translate-y-2">
         <h2 class="text-2xl font-semibold">{project.title}</h2>
         <p class="text-gray-600">{project.description}</p>
       </li>
     ))}
   </ul>
 </Layout>
+
+<style>
+  body {
+    font-family: 'Inter', 'Poppins', 'Montserrat', sans-serif;
+  }
+
+  h1, h2 {
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  a {
+    font-weight: 700;
+  }
+
+  .shadow-lg {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.7);
+  }
+
+  .rounded-lg {
+    border-radius: 12px;
+  }
+</style>

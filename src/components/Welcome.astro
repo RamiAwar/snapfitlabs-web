@@ -53,7 +53,7 @@ import background from '../assets/background.svg';
 	}
 
 	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		font-family: 'Inter', 'Poppins', 'Montserrat', sans-serif;
 		height: 100%;
 	}
 
@@ -74,6 +74,7 @@ import background from '../assets/background.svg';
 	h1 {
 		font-size: 22px;
 		margin-top: 0.25em;
+		font-weight: 700;
 	}
 
 	#links {
@@ -88,6 +89,7 @@ import background from '../assets/background.svg';
 		color: #111827;
 		text-decoration: none;
 		transition: color 0.2s;
+		font-weight: 700;
 	}
 
 	#links a:hover {
@@ -104,8 +106,10 @@ import background from '../assets/background.svg';
 		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
 		box-shadow:
 			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
-		border-radius: 10px;
+			inset 0 -2px 0 rgba(0, 0, 0, 0.24),
+			8px 8px 16px rgba(0, 0, 0, 0.2),
+			-8px -8px 16px rgba(255, 255, 255, 0.7);
+		border-radius: 12px;
 	}
 
 	#links a.button:hover {
@@ -129,6 +133,7 @@ import background from '../assets/background.svg';
 		font-weight: normal;
 		color: #111827;
 		font-size: 20px;
+		font-weight: 700;
 	}
 
 	p {
@@ -137,6 +142,7 @@ import background from '../assets/background.svg';
 		line-height: 24px;
 		letter-spacing: -0.006em;
 		margin: 0;
+		font-weight: 300;
 	}
 
 	code {
@@ -154,6 +160,7 @@ import background from '../assets/background.svg';
 		background: rgba(255, 255, 255, 1);
 		border-radius: 16px;
 		border: 1px solid white;
+		box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.7);
 	}
 
 	#news {
@@ -164,6 +171,7 @@ import background from '../assets/background.svg';
 		text-decoration: none;
 		transition: background 0.2s;
 		backdrop-filter: blur(50px);
+		border-radius: 12px;
 	}
 
 	#news:hover {

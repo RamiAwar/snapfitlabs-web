@@ -18,3 +18,29 @@ const post = {
   <h1 class="text-4xl font-bold mb-8">{post.title}</h1>
   <div class="prose" innerHTML={post.content}></div>
 </Layout>
+
+<style>
+  body {
+    font-family: 'Inter', 'Poppins', 'Montserrat', sans-serif;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  a {
+    font-weight: 700;
+  }
+
+  .shadow-lg {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.7);
+  }
+
+  .rounded-lg {
+    border-radius: 12px;
+  }
+</style>

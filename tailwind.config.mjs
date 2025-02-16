@@ -22,7 +22,22 @@ export default {
       },
       borderRadius: {
         full: '9999px',
-      }
+      },
+      fontFamily: {
+        sans: ['Inter', 'Poppins', 'Montserrat', 'sans-serif'],
+      },
+      fontWeight: {
+        heading: '700',
+        body: '300',
+        button: '700',
+      },
+      boxShadow: {
+        soft: '0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06)',
+        glow: '0 0 8px rgba(255, 255, 255, 0.6)',
+      },
+      borderRadius: {
+        neumorphic: '12px',
+      },
     },
   },
   plugins: [

@@ -23,19 +23,19 @@ const {
     <title>{title}</title>
   </head>
   <body class="bg-gray-50 text-gray-900">
-    <header class="border-b border-gray-200">
-      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <header class="fixed top-4 left-1/2 transform -translate-x-1/2 w-11/12 max-w-7xl z-50">
+      <nav class="bg-white bg-opacity-30 backdrop-blur-md border border-gray-200 rounded-full shadow-lg px-6 py-3 flex items-center justify-between">
         <a href="/" class="text-2xl font-bold text-gray-900">
           SnapFitLabs
         </a>
         <div class="flex gap-6">
-          <a href="/blog" class="text-gray-600 hover:text-gray-900">Blog</a>
-          <a href="/products" class="text-gray-600 hover:text-gray-900">Products</a>
-          <a href="/about" class="text-gray-600 hover:text-gray-900">About</a>
+          <a href="/blog" class="text-gray-600 hover:text-yellow-400">Blog</a>
+          <a href="/products" class="text-gray-600 hover:text-yellow-400">Products</a>
+          <a href="/about" class="text-gray-600 hover:text-yellow-400">About</a>
         </div>
       </nav>
     </header>
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-20">
       <slot />
     </main>
     <footer class="bg-gray-900 text-gray-100 mt-16">

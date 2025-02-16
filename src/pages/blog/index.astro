@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const posts = [
+  { title: 'Post 1', url: '/blog/post1' },
+  { title: 'Post 2', url: '/blog/post2' },
+];
+
+---
+
+<Layout title="Blog">
+  <h1 class="text-4xl font-bold mb-8">Blog</h1>
+  <ul class="space-y-4">
+    {posts.map((post) => (
+      <li>
+        <a href={post.url} class="text-2xl text-blue-600 hover:underline">
+          {post.title}
+        </a>
+      </li>
+    ))}
+  </ul>
+</Layout>

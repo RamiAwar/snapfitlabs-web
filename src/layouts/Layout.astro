@@ -1,14 +1,14 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
 interface Props {
   title: string;
   description?: string;
 }
 
-const { 
-  title, 
-  description = "SnapFitLabs - 3D Printing, Industrial Design, and Fusion360 Plugins"
+const {
+  title,
+  description = "SnapFitLabs - 3D Printing, Industrial Design, and Fusion360 Plugins",
 } = Astro.props;
 ---
 
@@ -23,15 +23,18 @@ const {
     <title>{title}</title>
   </head>
   <body class="bg-gray-50 text-gray-900">
-    <header class="fixed top-4 left-1/2 transform -translate-x-1/2 w-11/12 max-w-7xl z-50">
-      <nav class="bg-white bg-opacity-30 backdrop-blur-md border border-gray-200 rounded-full shadow-lg px-6 py-3 flex items-center justify-between">
-        <a href="/" class="text-2xl font-bold text-gray-900">
-          SnapFitLabs
-        </a>
+    <header
+      class="fixed top-12 left-1/2 transform -translate-x-1/2 max-w-7xl z-50"
+    >
+      <nav
+        class="bg-white bg-opacity-70 backdrop-blur-sm border border-gray-200 rounded-full shadow-lg px-6 py-3 flex items-center justify-between"
+      >
         <div class="flex gap-6">
-          <a href="/blog" class="text-gray-600 hover:text-yellow-400">Blog</a>
-          <a href="/products" class="text-gray-600 hover:text-yellow-400">Products</a>
-          <a href="/about" class="text-gray-600 hover:text-yellow-400">About</a>
+          <a href="/blog" class="text-gray-800 hover:text-yellow-400">Blog</a>
+          <a href="/products" class="text-gray-800 hover:text-yellow-400"
+            >Products</a
+          >
+          <a href="/about" class="text-gray-800 hover:text-yellow-400">About</a>
         </div>
       </nav>
     </header>
@@ -51,7 +54,9 @@ const {
             <h3 class="text-yellow-400 font-bold text-lg mb-4">Quick Links</h3>
             <ul class="space-y-2">
               <li><a href="/blog" class="hover:text-yellow-400">Blog</a></li>
-              <li><a href="/products" class="hover:text-yellow-400">Products</a></li>
+              <li>
+                <a href="/products" class="hover:text-yellow-400">Products</a>
+              </li>
               <li><a href="/about" class="hover:text-yellow-400">About</a></li>
             </ul>
           </div>
@@ -64,7 +69,9 @@ const {
             </ul>
           </div>
         </div>
-        <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+        <div
+          class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400"
+        >
           © {new Date().getFullYear()} SnapFitLabs. All rights reserved.
         </div>
       </div>

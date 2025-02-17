@@ -21,7 +21,7 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-black text-gray-200">
+  <body class="w-full bg-black text-[#F4F4F4]">
     <header
       class="fixed top-12 left-1/2 transform -translate-x-1/2 max-w-7xl z-50"
     >
@@ -42,54 +42,55 @@ const {
         </div>
       </nav> -->
     </header>
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-20">
+
+    <main class="">
       <slot />
     </main>
 
-    <footer class="bg-black text-[#888888] mt-16">
+    <!-- <footer class="bg-black text-[#888888] mt-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 class="text-white font-bold text-lg mb-4">SnapFitLabs</h3>
-            <p class="text-yellow-600">Simplifying product design.</p>
+            <h3 class="text-[#FFA927] font-bold text-lg mb-4">SnapFitLabs</h3>
+            <p class="text-[#888888]">Simplifying product design.</p>
           </div>
           <div>
-            <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+            <h3 class="text-[#FFA927] font-bold text-lg mb-4">Quick Links</h3>
             <ul class="space-y-2">
               <li>
-                <a href="/blog" class="hover:text-yellow-500 transition-colors"
+                <a href="/blog" class="hover:text-[#FFBA4D] transition-colors"
                   >Blog</a
                 >
               </li>
               <li>
                 <a
                   href="/products"
-                  class="hover:text-yellow-500 transition-colors">Products</a
+                  class="hover:text-[#FFBA4D] transition-colors">Products</a
                 >
               </li>
               <li>
                 <a
                   href="/privacy"
-                  class="hover:text-yellow-500 transition-colors">Team</a
+                  class="hover:text-[#FFBA4D] transition-colors">Team</a
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h3 class="text-white font-bold text-lg mb-4">Connect</h3>
+            <h3 class="text-[#FFA927] font-bold text-lg mb-4">Connect</h3>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="hover:text-yellow-500 transition-colors"
+                <a href="#" class="hover:text-[#FFBA4D] transition-colors"
                   >LinkedIn</a
                 >
               </li>
               <li>
-                <a href="#" class="hover:text-yellow-500 transition-colors"
+                <a href="#" class="hover:text-[#FFBA4D] transition-colors"
                   >Twitter</a
                 >
               </li>
               <li>
-                <a href="#" class="hover:text-yellow-500 transition-colors"
+                <a href="#" class="hover:text-[#FFBA4D] transition-colors"
                   >Newsletter</a
                 >
               </li>
@@ -100,7 +101,7 @@ const {
           © {new Date().getFullYear()} SnapFitLabs. All rights reserved.
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
 

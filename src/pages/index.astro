@@ -1,48 +1,54 @@
 ---
 // index.astro
-import LandingLayout from "../layouts/LandingLayout.astro";
+import Layout from "../layouts/Layout.astro";
 import dovetail_front from "../assets/camera/dovetail_front.jpg";
 import dovetail_top from "../assets/camera/dovetail_top.jpg";
-import knob from "../assets/camera/knob.jpg";
 import worm_gear from "../assets/camera/worm_gear.jpg";
 
 import Image from "astro/components/Image.astro";
-
-// import camera3 from "../assets/camera/camera3.avif";
-// import camera4 from "../assets/camera/camera4.avif";
 ---
 
-<LandingLayout title="SnapFitLabs - Simplifying Product Design">
-  <div class="relative bg-black">
-    <section class="min-h-screen relative flex items-center">
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<Layout title="SnapFitLabs - Simplifying Product Design">
+  <div class="bg-black">
+    <section class="min-h-screen flex items-center">
+      <div class="z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center md:text-left md:max-w-2xl relative">
-          <h1 class="text-5xl md:text-7xl font-bold text-[#F4F4F4] mb-8">
-            <span class="text-white text-center">SnapFitLabs</span>
+          <h1
+            class="text-7xl font-bold text-transparent bg-clip-text bg-[linear-gradient(2005deg,_rgb(255,255,247)_8.55%,_rgb(114,114,103)_107.01%)] mb-2"
+          >
+            <span class="text-center">SnapFitLabs</span>
           </h1>
           <p
-            class="text-xl md:text-2xl font-extralight text-center text-yellow-600 max-w-3xl mb-12"
+            class="text-xl md:text-2xl font-extralight text-center text-gray-400 max-w-3xl mb-12"
           >
             Simplifying product design
           </p>
 
-          <Image src={dovetail_front} alt="Dovetail Front" class="w-96" />
-          <Image src={dovetail_top} alt="Dovetail Top" class="w-96" />
-          <Image src={knob} alt="Knob" class="w-96" />
-          <Image src={worm_gear} alt="Worm Gear" class="w-96" />
-
-          <!-- <img
-            src={camera3}
-            alt="Camera 3"
-            class="absolute bottom-0 left-0 w-16 h-16"
+          <Image
+            src={dovetail_front}
+            alt="Dovetail Front"
+            class="w-52 absolute rotate-[225deg] left-0 -translate-x-1/2 lg:-translate-x-full lg:-left-[calc(50%)] top-[calc(-100%)] lg:top-[calc(-150%)] -translate-y-full"
           />
-          <img
-            src={camera4}
-            alt="Camera 4"
-            class="absolute bottom-0 right-0 w-16 h-16"
+
+          <Image
+            src={dovetail_top}
+            alt="Dovetail Top"
+            class="w-72 absolute -rotate-[50deg] -top-[calc(130%)] lg:top-[calc(-200%)] -translate-y-full right-0 md:right-[calc(-30%)] lg:right-[calc(-50%)] translate-x-1/2"
+          />
+
+          <!-- <Image
+            src={knob}
+            alt="Knob"
+            class="absolute w-96 rotate-[calc(35deg)] right-[calc(10%)] translate-x-1/2 translate-y-full"
           /> -->
+
+          <Image
+            src={worm_gear}
+            alt="Worm Gear"
+            class="w-72 absolute rotate-[calc(105deg)] -left-30 -translate-x-1/2 translate-y-1/2 lg:translate-y-full"
+          />
         </div>
       </div>
     </section>
   </div>
-</LandingLayout>
+</Layout>
